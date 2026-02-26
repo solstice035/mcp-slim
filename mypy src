@@ -1,0 +1,25 @@
+
+## How It Works
+
+1. **Configuration Discovery**: Reads MCP server configurations from Claude Desktop's config file
+2. **Stdio Transport**: Spawns MCP server processes and communicates via stdin/stdout using JSON-RPC
+3. **Compact Formatting**: Transforms verbose JSON schemas into concise, human-readable summaries
+4. **Direct Tool Calls**: Invokes tools with minimal overhead and returns results efficiently
+
+## Requirements
+
+- Python 3.10+
+- MCP servers configured in Claude Desktop (or compatible config file)
+
+## License
+
+MIT License - see LICENSE file for details
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Acknowledgments
+
+- Built on the [Model Context Protocol](https://modelcontextprotocol.io/)
+- Uses the official [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
