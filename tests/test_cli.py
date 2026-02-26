@@ -168,8 +168,8 @@ def test_cli_config_command(temp_config_file: Path, monkeypatch: pytest.MonkeyPa
     """Test config command."""
     # Monkeypatch the default config path
     monkeypatch.setattr(
-        "mcp_slim.config.ConfigManager._get_default_config_path",
-        lambda: temp_config_file,
+        ConfigManager, "_get_default_config_path",
+        staticmethod(lambda: temp_config_file),
     )
     
     runner = CliRunner()
@@ -183,8 +183,8 @@ def test_cli_config_command(temp_config_file: Path, monkeypatch: pytest.MonkeyPa
 def test_cli_config_command_json(temp_config_file: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     """Test config command with JSON output."""
     monkeypatch.setattr(
-        "mcp_slim.config.ConfigManager._get_default_config_path",
-        lambda: temp_config_file,
+        ConfigManager, "_get_default_config_path",
+        staticmethod(lambda: temp_config_file),
     )
     
     runner = CliRunner()
