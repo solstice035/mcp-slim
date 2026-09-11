@@ -1,5 +1,9 @@
 # MCP Slim
 
+> **Built by [The Foundry](https://github.com/solstice035/the-foundry)**, an autonomous build pipeline I run. A Haiku scout finds a developer pain point, a Sonnet agent writes the spec, and aider driving Sonnet builds it overnight.
+>
+> This repo was produced end to end by that pipeline. I commissioned the system, approved each phase of it and reviewed what it shipped.
+
 A lightweight CLI proxy for AI agents that dramatically reduces token usage compared to full MCP. Instead of verbose JSON-RPC tool schemas flooding the context window, mcp-slim exposes tools as compact CLI commands with minimal descriptions — cutting token overhead by 60-80% while maintaining tool functionality.
 
 ## Installation
