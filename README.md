@@ -13,7 +13,7 @@ pip install mcp-slim
 # or
 pipx install mcp-slim
 # or from source
-git clone https://github.com/nuloinc/foundry-2026-02-26-mcp-slim.git
+git clone https://github.com/solstice035/mcp-slim.git
 cd mcp-slim && pip install -e .
 ```
 
